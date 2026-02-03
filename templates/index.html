@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classplus Video Player</title>
+</head>
+<body>
+    <h2>Classplus Video Player</h2>
+    <video id="video" controls width="640"></video>
+    <br>
+    <button id="downloadBtn">Download Video</button>
+    <div id="player"></div>
+
+    <!-- HLS.js for Non-DRM -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <!-- Shaka Player for DRM -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.4.0/shaka-player.compiled.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
